@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Bricolage Grotesque", sans-serif ;
+    line-height: 2.5;
+    
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* header */
+
+header {
+    padding-bottom: -10px;
+    border-bottom: 3px solid #967E76;
+    
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #fff;
+    padding: 10px 0;
+}
+
+.header {
+    margin-inline: 50px;
+}
+
+.nav-logo {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-logo p {
+    position: absolute;
+    font-size: 30px;
+    font-family: "Gabriela", sans-serif;
+    color: #967E76;
+
+    text-shadow: 1 1 1 1 #967E76;
+
+    left: 140px;
+    top: -20px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.nav img {
+    width: 70px;
+    height: 70px;
+}
+
+nav ul {
+    list-style-type: none;
+
+    display: flex;
+    margin-top: 10px;
+
+    gap: 30px;
+    
+}
+
+
+nav ul li a:hover {
+    opacity: 50%;
+}
+nav ul li a {
+    border: 2px solid #967E76;
+    padding-inline: 30px;
+    padding-block: 10px;
+
+    border-radius: 10px;
+
+    background-color: #EEE3CB;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+
+
+}
+
+main {
+    margin-inline: 100px;
+    margin-block: 20px;
+
+    margin-top: 130px;
+}
+
+main h1 {
+    font-size: 50px;
+}
+
+main > p {
+    margin-top: -40px;
+    margin-bottom: 40px;
+
+    line-height: 3;
+
+    font-style: italic;
+    
+}
+
+#welcome {
+    color: #9BABB8;
+}
+
+.sekolah {
+    font-family: "Gabriela", sans-serif;
+    color: #967E76;
+}
+
+.main-img {
+    width: 1366px;
+    height: 578px;
+    
+    background-image: url(/img/Untitled5_20240603201045.png);
+
+    border-radius: 30px;
+
+    margin: auto;
+}
+
+.informasi {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 80px;
+}
+
+.visimisi {
+    width: 50%;
+
+    border: 2px dotted #967E76;
+    border-radius: 20px;
+
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.visi {
+    text-align: center;
+
+    background-color: #EEE3CB;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.misi {
+    margin: 20px;
+    background-color: #EEE3CB;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.misi h3 {
+    text-align: center;
+}
+
+.informasi-2{
+    width: 50%;
+
+    padding: 20px;
+    margin-top: 50px;
+
+    text-align: center;
+}
+
+.informasi-2-judul {
+    font-size: 30px;
+
+    margin-bottom: -10px;
+    margin-top: 80px;
+}
+
+.informasi-2-button {
+    border: 2px solid #967E76;
+    border-radius: 50px;
+
+    font-size: 20px;
+    color: #967E76;
+
+    padding: 20px 100px;
+
+    background-color: #EEE3CB;
+
+}
+
+.informasi-2-button:hover {
+    opacity: 50%;
+}
+
+#ourfacilitation {
+    border-top: 1px solid black;
+
+    margin-top: 50px;
+
+    text-align: center;
+}
+
+#ourfacilitation div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+}
+
+.circle {
+    border: 1px solid black;
+    border-radius: 50%;
+
+    width: 150px;
+    height: 150px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circle:hover {
+    position: relative;
+    width: 200px;
+    height: 200px;
+
+    
+}
+
+.circle:hover p {
+    margin-top: 200px;
+}
+
+.circle:hover #messageus {
+    position: absolute;
+    top: 100PX;
+}
+.circle p {
+    margin-top: 150px;
+    text-transform:capitalize;
+}
+#massageus-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+#messageus {
+    margin-top: 100px;
+    border-top: 3px solid #967E76;
+    padding-top: 50px;
+}
+
+#messageus-isi {
+    background-color: #EEE3CB;
+    padding: 30px;
+    border-radius: 20px;
+
+}
+
+label {
+    line-height: 3;
+}
+
+/*from*/
+
+.form-input {
+    margin-left: 10px;
+
+    width: 300px;
+    height: 30px;
+
+    border: 2px solid #967E76;
+    border-radius: 20px;
+}
+
+.form-pesan {
+    margin-left: 10px;
+
+    width: 300px;
+    height: 200px;
+
+    border: 2px solid #967E76;
+    border-radius: 20px;
+
+    resize: none;
+
+
+}
+
+.from-radio {
+    margin-left: 10px;
+}
+
+#hasilsubmit {
+    width: 400px;
+    height: 300px;
+    border: 2px solid #967E76;
+    border-radius: 20px;
+}
+}
