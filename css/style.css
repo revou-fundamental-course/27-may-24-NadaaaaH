@@ -9,6 +9,8 @@ body {
     
     margin: 0;
     padding: 0;
+
+    transition: ease 2s;
     
 }
 
@@ -60,6 +62,15 @@ header {
     height: 70px;
 }
 
+.nav-logo img:hover {
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+
+    transition: ease-out 1s;
+}
+
 nav ul {
     list-style-type: none;
 
@@ -88,6 +99,9 @@ nav ul li a {
 
 
 }
+
+
+/*main*/
 
 main {
     margin-inline: 100px;
@@ -200,7 +214,7 @@ main > p {
 }
 
 #ourfacilitation {
-    border-top: 1px solid black;
+    border-top: 3px solid #967E76;
 
     margin-top: 50px;
 
@@ -233,11 +247,13 @@ main > p {
     width: 200px;
     height: 200px;
 
-    
+    transition: ease 1s;
 }
 
 .circle:hover p {
     margin-top: 200px;
+
+    transition: ease 1s;
 }
 
 .circle:hover #messageus {
@@ -248,11 +264,17 @@ main > p {
     margin-top: 150px;
     text-transform:capitalize;
 }
+
+
+/*MESSAGE US*/
+
+
 #massageus-form{
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 40px;
+
 }
 
 #messageus {
@@ -266,6 +288,10 @@ main > p {
     padding: 30px;
     border-radius: 20px;
 
+}
+
+#messageus h3 {
+    margin-bottom: 50px;
 }
 
 label {
@@ -304,8 +330,465 @@ label {
 
 #hasilsubmit {
     width: 400px;
-    height: 300px;
+    height: 350px;
     border: 2px solid #967E76;
     border-radius: 20px;
+    background-color: #fff;
+
+    align-self: center;
 }
+
+#Submit {
+    width:420px;
+    height: 40px;
+    background-color:  #967E76;
+    border: 0px transparent;
+    border-radius: 20px;
+
+    font-size: 20px;
+
+    color: #fff;
+
+    margin-left: 10px;
+}
+
+#Submit:hover {
+    opacity: 50%;
+
+    color: blac;
+}
+
+#massageus-hasil {
+    background-color: #EEE3CB;
+    padding: 20px;
+    border-radius: 20px;
+
+    display: grid;
+}
+
+footer {
+    border-top: 3px solid #967E76;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    opacity: 70%;
+}
+
+.copy-right {
+    position: absolute;
+    margin-top: auto;
+    margin-left: 20px; 
+    list-style: none;
+    margin-top: 15px;
+    justify-self: center;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+@media screen and (max-width: 426px) {
+    
+    
+    body {
+        line-height: 2;
+    }
+    
+    /* header */
+    
+    header {
+        border-bottom: 3px solid #967E76;
+        
+        width: 100%;
+        margin: 0 auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background: #fff;
+        padding: 0px;
+        height: 200px;
+    }
+    
+    .header {
+        margin-inline: 0px;
+    }
+    
+    .nav-logo {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        margin-top: 10px;
+    }
+    
+    .nav-logo p {
+        position: relative;
+        font-size: 30px;
+        font-family: "Gabriela", sans-serif;
+        color: #967E76;
+    
+        text-shadow: 1 1 1 1 #967E76;
+    
+        left: 0px;
+        top:-60px;
+    }
+    
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+    }
+    
+    .nav img {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .nav-logo img:hover {
+
+        width: 0px;
+        height: 0px;
+    
+        position: absolute;
+    
+        transition: ease-out 0s;
+    }
+    
+    nav ul {
+        list-style-type: none;
+    
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        gap: 20px;
+        
+    }
+    
+    
+    nav ul li a:hover {
+        opacity: 50%;
+    }
+    nav ul li a {
+        border: 2px solid #967E76;
+        padding-inline: 20px;
+        padding-block: 9px;
+    
+        border-radius: 10px;
+    
+        background-color: #EEE3CB;
+        font-size: 12px;
+        text-decoration: none;
+        color: black;
+    
+    
+    }
+    
+    
+    /*main*/
+    
+    main {
+        margin-inline: 10px;
+        margin-block: 20px;
+    
+        margin-top: 250px;
+    }
+    
+    main h1 {
+        font-size: 25px;
+        width: 300px;
+        display:block;
+    }
+    
+    main > p {
+        margin-top: -10px;
+        margin-bottom: 40px;
+    
+        line-height: 2;
+    
+        font-style: italic;
+        
+    }
+    
+    #welcome {
+        color: #9BABB8;
+    }
+    
+    .sekolah {
+        font-family: "Gabriela", sans-serif;
+        color: #967E76;
+    }
+    
+    .main-img {
+        width: 400px;
+        height: 200px;
+        
+        background-image: url(/img/Untitled5_20240603201045.png);
+
+        background-size: cover;
+        border-radius: 30px;
+    
+        margin: auto;
+
+        align-self: center;
+    }
+    
+    .informasi {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    
+        gap: 10px;
+    }
+    
+    .visimisi {
+        width: 100%;
+    
+        border: 2px dotted #967E76;
+        border-radius: 20px;
+    
+        padding: 20px;
+        margin-top: 50px;
+
+        font-size: small;
+    }
+    
+    .visi {
+        text-align: center;
+    
+        background-color: #EEE3CB;
+        border-radius: 30px;
+        padding: 10px;
+    }
+    
+    .misi {
+        margin: 20px;
+        background-color: #EEE3CB;
+        border-radius: 30px;
+        padding: 10px;
+    }
+    
+    .misi h3 {
+        text-align: center;
+    }
+    
+    .informasi-2{
+        width: 100%;
+    
+        padding: 20px;
+        margin-top: -50px;
+    
+        text-align: center;
+    }
+    
+    .informasi-2-judul {
+        font-size: 30px;
+    
+        margin-bottom: -10px;
+        margin-top: 50px;
+    }
+    
+    .informasi-2-button {
+        border: 2px solid #967E76;
+        border-radius: 50px;
+    
+        font-size: 20px;
+        color: #967E76;
+    
+        padding: 20px 100px;
+    
+        background-color: #EEE3CB;
+    
+    }
+    
+    .informasi-2-button:hover {
+        opacity: 50%;
+    }
+    
+    #ourfacilitation {
+        border-top: 3px solid #967E76;
+    
+        margin-top: 50px;
+    
+        text-align: center;
+    }
+    
+    #ourfacilitation div {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    
+        margin-top: 20px;
+    }
+    
+    .circle {
+        border: 1px solid black;
+        border-radius: 50%;
+    
+        width: 150px;
+        height: 150px;
+    
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .circle:hover {
+        position: relative;
+        width: 200px;
+        height: 200px;
+    
+        transition: ease 1s;
+    }
+    
+    .circle:hover p {
+        margin-top: 200px;
+    
+        transition: ease 1s;
+    }
+    
+    .circle:hover #messageus {
+        position: absolute;
+        top: 100PX;
+    }
+    .circle p {
+        margin-top: 150px;
+        text-transform:capitalize;
+    }
+    
+    
+    /*MESSAGE US*/
+    
+    
+    #massageus-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    
+    }
+    
+    #messageus {
+        margin-top: 100px;
+        border-top: 3px solid #967E76;
+        padding-top: 50px;
+
+        text-align: center;
+    }
+    
+    #messageus-isi {
+        background-color: #EEE3CB;
+        padding: 30px;
+        border-radius: 20px;
+    
+    }
+    
+    #messageus h3 {
+        margin-bottom: 50px;
+    }
+    
+    label {
+        line-height: 3;
+    }
+    
+    /*from*/
+    
+    .form-input {
+        margin-left: 10px;
+    
+        width: 300px;
+        height: 30px;
+    
+        border: 2px solid #967E76;
+        border-radius: 20px;
+    }
+    
+    .form-pesan {
+        margin-left: 10px;
+    
+        width: 300px;
+        height: 200px;
+    
+        border: 2px solid #967E76;
+        border-radius: 20px;
+    
+        resize: none;
+    
+    
+    }
+    
+    .from-radio {
+        margin-left: 10px;
+    }
+    
+    #hasilsubmit {
+        width: 300px;
+        height: 350px;
+        border: 2px solid #967E76;
+        border-radius: 20px;
+        background-color: #fff;
+    
+        align-self: center;
+    }
+    
+    #Submit {
+        width:300px;
+        height: 40px;
+        background-color:  #967E76;
+        border: 0px transparent;
+        border-radius: 20px;
+    
+        font-size: 20px;
+    
+        color: #fff;
+    
+        margin-left: 10px;
+
+        align-self: center;
+    }
+    
+    #Submit:hover {
+        opacity: 50%;
+    
+        color: blac;
+    }
+    
+    #massageus-hasil {
+        background-color: #EEE3CB;
+        padding: 10px;
+        border-radius: 20px;
+    
+        display: grid;
+    }
+    
+    footer {
+        border-top: 3px solid #967E76;
+        margin-top: 100px;
+        margin-bottom: 70px;
+    }
+    footer ul{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    
+        opacity: 70%;
+    }
+    
+    .copy-right {
+        position: absolute;
+        margin-top: auto;
+        margin-left: 20px; 
+        list-style: none;
+        margin-top: 15px;
+        justify-self: center;
+    
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    
 }

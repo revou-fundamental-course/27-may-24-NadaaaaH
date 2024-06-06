@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Gabriela&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+crossorigin="anonymous" referrerpolicy="no-referrer">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
 </head>
@@ -57,23 +59,22 @@
             </div>
 
             <div class="informasi-2">
-                <div>
-                    <h3 class="informasi-2-judul">Latar Belakang</h3>
+                <div class="parent-1">
+                    <h3 class="informasi-2-judul"  id="judulsatu">Latar Belakang</h3>
                     <button class="informasi-2-button" id="latarbelakang">Know More?</button>
                     <p class="informasi-2-p" id="penjelasanlatarbelakang" hidden>Melody High School didirikan oleh sekelompok musisi dan pendidik yang berdedikasi pada tahun 20XX. Mereka melihat adanya kebutuhan akan lembaga pendidikan yang tidak hanya fokus pada akademik, tetapi juga mengembangkan potensi seni dan kreativitas siswa. Berbekal pengalaman dan semangat untuk memberikan pendidikan berkualitas, mereka membangun sekolah ini dengan tujuan mencetak musisi-musisi berbakat yang siap bersaing di kancah nasional dan internasional.</p>
-                    <button class="informasi-2-button-2" id="tutuppenjelasansatu" hidden>Perkecil?</button>
                 </div>
 
-                <div>
-                    <h3 class="informasi-2-judul">Fokus dan Fasilitas</h3>
-                    <button class="informasi-2-button">Know More?</button>
-                    <p class="informasi-2-p" hidden>Sebagai sekolah yang berfokus pada dunia musik, Melody High School menawarkan kurikulum yang komprehensif, mencakup teori musik, praktek instrumen, vokal, serta teknologi musik. Selain itu, sekolah ini juga menyediakan fasilitas unggulan seperti studio rekaman, ruang latihan, aula konser, dan kolam renang untuk mendukung perkembangan holistik siswa.</p>
+                <div class="parent-2">
+                    <h3 class="informasi-2-judul" id="juduldua">Fokus dan Fasilitas</h3>
+                    <button class="informasi-2-button" id="fokusdanfasilitas">Know More?</button>
+                    <p class="informasi-2-p" id="penjelasanfokusdanfasilitas" hidden>Sebagai sekolah yang berfokus pada dunia musik, Melody High School menawarkan kurikulum yang komprehensif, mencakup teori musik, praktek instrumen, vokal, serta teknologi musik. Selain itu, sekolah ini juga menyediakan fasilitas unggulan seperti studio rekaman, ruang latihan, aula konser, dan kolam renang untuk mendukung perkembangan holistik siswa.</p>
                 </div>
 
-                <div>
-                    <h3 class="informasi-2-judul">Komunitas dan Kolaborasi</h3>
-                    <button class="informasi-2-button">Know More?</button>
-                    <p class="informasi-2-p" hidden>Melody High School bangga menjadi bagian dari komunitas musik yang dinamis dan berkolaborasi dengan berbagai institusi musik terkemuka, baik lokal maupun internasional. Kemitraan ini memberikan siswa kesempatan untuk belajar dari para ahli, menghadiri masterclass, dan tampil di panggung bergengsi.</p>
+                <div class="parent-3">
+                    <h3 class="informasi-2-judul" id="judultiga">Komunitas dan Kolaborasi</h3>
+                    <button class="informasi-2-button" id="komunitasdankolaborasi">Know More?</button>
+                    <p class="informasi-2-p" id="penjelasankomunitas" hidden>Melody High School bangga menjadi bagian dari komunitas musik yang dinamis dan berkolaborasi dengan berbagai institusi musik terkemuka, baik lokal maupun internasional. Kemitraan ini memberikan siswa kesempatan untuk belajar dari para ahli, menghadiri masterclass, dan tampil di panggung bergengsi.</p>
                 </div>
             </div>
         </div>
@@ -100,27 +101,27 @@
                     <tr>
                         <td>Nama</td>
                         <td>:</td>
-                        <td><input type="text" name="nama" class="form-input" required></td>
+                        <td><input type="text" name="nama" class="form-input" id="nama"></td>
                     </tr>
                     <tr>
                         <td>Tanggal Lahir</td>
                         <td>:</td>
-                        <td><input type="date" name="tanggal_lahir" class="form-input" required></td>
+                        <td><input type="date" name="tanggal_lahir" class="form-input" id="tanggallahir" required></td>
                     </tr>
                     <tr>
-                        <td>Jenis Kelamin</td>
+                        <td>Gender</td>
                         <td>:</td>
                         <td>
                             <div class="from-radio">
-                            <input type="radio" name="jenis_kelamin" value="laki-laki" required vc> Laki-laki
-                            <input type="radio" name="jenis_kelamin" value="perempuan" required> Perempuan
+                            <input type="radio" name="jenis_kelamin" value="laki-laki" id="gender-l" required> Laki-laki
+                            <input type="radio" name="jenis_kelamin" value="perempuan" id="gender-p" required> Perempuan
                         </div>
                         </td>
                     </tr>
                     <tr>
                         <td>Pesan</td>
                         <td>:</td>
-                        <td><textarea name="pesan" class="form-pesan" required></textarea></td>
+                        <td><textarea name="pesan" class="form-pesan" id="pesan" required></textarea></td>
                     </tr>
                 </table>
               
@@ -129,14 +130,47 @@
                
             </div>
             <div id="massageus-hasil">
-                <textarea name="Hasil" id="hasilsubmit"></textarea>
+                <div id="hasilsubmit">
+                    <table>
+                        <tr>
+                            <td>Nama</td>
+                            <td>:</td>
+                            <td id="hasilnama"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Tanggal Lahir</td>
+                            <td>:</td>
+                            <td id="hasiltl"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Gender</td>
+                            <td>:</td>
+                            <td id="hasilgender"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Pesan</td>
+                            <td>:</td>
+                            <td id="pesanhasil"></td>
+                        </tr>
+                    </table>
+
+                </div>
             </div>
         </div>
         </div>
 
     </main>
 
-    <footer></footer>
+    <footer>
+        <ul>
+            <li class="fab fa-instagram"> nadaanf</li>
+            <li class="far fa-envelope"> nadahaifanurfadhilah@gmail.com</li>
+            <li class="copy-right">&copy; NadaHN 2024</li>
+        </ul>
+    </footer>
 
     <script src="/js/script.js"></script>
 </body>
